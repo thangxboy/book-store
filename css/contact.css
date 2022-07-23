@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header {
+    height: 50px;
+    line-height: 50px;
+}
+header .container {
+    border-bottom: 1px solid #111111;
+}
+header h1 {
+    display: inline;
+}
+header nav {
+    display: inline;
+    float: right;
+}
+header nav ul {
+    display: inline;
+}
+header nav ul li {
+    display: inline;
+    color: #111111;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #111111;
+    padding: 10px 20px;
+}
+header nav ul li.active a {
+    background-color: #111111;
+    color: white;
+}
+main {
+    margin-bottom: 30px;
+}
+main h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: black;
+}
+main form {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 20px;
+}
+main form label{
+    display: block;
+    margin: 10px 0;
+}
+main form .full {
+    width: 100%;
+    height: 30px;
+}
+main form .inline {
+    display: inline;
+}
+main form .flex-btn {
+    display: flex;
+    justify-content: space-between;
+}
+main form button {
+    margin: 20px 0;
+    padding: 15px 0;
+    font-size: 25px;
+    width: 45%;
+    background-color: #0275d8;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+main form textarea{
+    width: 100%;
+    height: 200px;
+}
+footer {
+    height: 50px;
+    line-height: 50px;
+}
+footer nav {
+    float: right;
+}
+footer nav ul li {
+    display: inline;
+    padding: 0 20px;
+}
+footer nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+@media screen and (max-width: 960px) {
+    header {
+        height: auto;
+        line-height: auto;
+    }
+    header .container {
+        border-bottom: none;
+    }
+    header h1 {
+        display: block;
+    }
+    header nav {
+        display: block;
+        float: none;
+        border-top: 1px solid #111111;
+        border-bottom: 1px solid #111111;
+    }
+    header nav ul {
+        display: inline;
+    }
+    header nav ul li {
+        display: inline;
+        color: #111111;
+    }
+    main form {
+        width: 75%;
+    }
+}
+@media screen and (max-width: 600px) {
+    header {
+        height: auto;
+        line-height: auto;
+    }
+    header .container {
+        border-bottom: none;
+    }
+    header h1 {
+        display: block;
+        text-align: center;
+    }
+    header nav {
+        display: block;
+        float: none;
+        text-align: center;
+        border-top: 1px solid #111111;
+        border-bottom: 1px solid #111111;
+    }
+    header nav ul {
+        display: block;
+        width: 100%;
+    }
+    header nav ul li {
+        display: block;
+        color: #111111;
+        width: 100%;
+    }
+    header nav ul li a{
+        width: 100%;
+    }
+    main form {
+        width: 100%;
+    }
+    footer nav {
+        float: none;
+        text-align: center;
+    }
+    footer nav ul li {
+        padding: 0 5px;
+    }
+}

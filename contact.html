@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="icon" type="image/x-icon" href="/images/icon.jpg">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>BookStore</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="category.html">Arts & Photography</a></li>
+                    <li><a href="category.html">Business of Art</a></li>
+                    <li><a href="category.html">Graphic Design</a></li>                  
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#">
+                <label for="purpose">Contact purpose</label>
+                <select name="purpose" id="purpose" class="full">
+                    <option value="sell">I want to sell books</option>
+                    <option value="buy">I want to buy books</option>
+                </select>
+                <label for="name">Your name</label>
+                <input type="text" name="name" id="name" class="full">
+                <label for="email">Your email</label>
+                <input type="email" name="email" id="email" class="full">
+                <label for="phone">Your Phone</label>
+                <input type="phone" name="phone" id="phone" class="full">
+                <label for="contact">How can we contact you?</label>
+                <label for="byemail" class="inline">By email
+                    <input type="checkbox" name="contact" value="byemail" checked="checked" id="byemail">
+                </label>
+                <label for="byphone" class="inline" style="margin-left: 10px;">By phone
+                    <input type="checkbox" name="contact" value="byphone" id="byphone">
+                </label>
+                <label for="newsletter">Do you want to receive our weekly newsletter?</label>
+                <input type="radio" id="yes" name="newsletter" value="yes">
+                <label for="yes" class="inline">Yes</label>
+                <input type="radio" id="no" name="newsletter" value="no" style="margin-left: 10px;">
+                <label for="no" class="inline">No</label>
+                <label for="message">Message</label>
+                <textarea name="message" id="message"></textarea>
+                <div class="flex-btn">
+                    <button type="submit">Submit</button>
+                    <button>Reset</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Copyright</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

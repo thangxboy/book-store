@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header {
+    height: 50px;
+    line-height: 50px;
+}
+header .container {
+    border-bottom: 1px solid #111111;
+}
+header h1 {
+    display: inline;
+}
+header nav {
+    display: inline;
+    float: right;
+}
+header nav ul {
+    display: inline;
+}
+header nav ul li {
+    display: inline;
+    color: #111111;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #111111;
+    padding: 10px 20px;
+}
+main {
+    margin-bottom: 30px;
+}
+main ul.breadcrumb {
+    margin: 20px 0;
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+}
+main ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+main ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: ">";
+}
+main ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+main ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+main .detail-book .img-area {
+    display: flex;
+    max-height: 400px;
+    margin: 0 auto;
+    width: 80%;
+    align-items: center;
+}
+main .detail-book .img-area .img-list{
+    display: flex;
+    height: 400px;
+    width: 100%;
+}
+main .detail-book .img-area .img-list img {
+    width: 75%;
+    object-fit: cover;
+}
+main .detail-book .img-area .img-list .small-img {
+    width: 25%;
+}
+main .detail-book .img-area .img-list .small-img img{
+    height: 33%;
+    display: block;
+    margin: 0 10px;
+    object-fit: cover;
+    border: 1px solid #111111;
+}
+main .detail-book .img-area .price-and-button{
+    width: 30%;
+}
+main .detail-book .img-area .price-and-button {
+    margin: 0 50px;
+}
+main .detail-book .img-area .price-and-button p {
+    font-size: 30px;
+    color: red;
+    padding: 50px 0;
+}
+main .detail-book .img-area .price-and-button button{
+    width: 200px;
+    height: 70px;
+    background-color: #0275d8;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+main .detail-book h2 {
+    margin: 20px 0;
+}
+footer {
+    height: 50px;
+    line-height: 50px;
+}
+footer nav {
+    float: right;
+}
+footer nav ul li {
+    display: inline;
+    padding: 0 20px;
+}
+footer nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+@media screen and (max-width: 960px) {
+    header {
+        height: auto;
+        line-height: auto;
+    }
+    header .container {
+        border-bottom: none;
+    }
+    header h1 {
+        display: block;
+    }
+    header nav {
+        display: block;
+        float: none;
+        border-top: 1px solid #111111;
+        border-bottom: 1px solid #111111;
+    }
+    header nav ul {
+        display: inline;
+    }
+    header nav ul li {
+        display: inline;
+        color: #111111;
+    }
+    main .detail-book .img-area {
+        display: flex;
+        height: 350px;
+        margin: 0 auto;
+        width: 100%;
+        align-items: center;
+    }
+    main .detail-book .img-area .img-list{
+        display: flex;
+        height: 300px;
+        width: 70%;
+    }
+    main .detail-book .img-area .img-list .small-img img{
+        height: 33.3%;
+        display: block;
+        margin: 0 10px;
+    }
+    main .detail-book .img-area .price-and-button{
+        width: 30%;
+    }
+    main .detail-book .img-area .price-and-button {
+        margin: 0;
+    }
+    main .detail-book .img-area .price-and-button p {
+        font-size: 30px;
+        color: red;
+        padding: 50px 0;
+    }
+    main .detail-book .img-area .price-and-button button{
+        width: 150px;
+        height: 70px;
+        background-color: #0275d8;
+        color: white;
+        border-radius: 10px;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 600px) {
+    header {
+        height: auto;
+        line-height: auto;
+    }
+    header .container {
+        border-bottom: none;
+    }
+    header h1 {
+        display: block;
+        text-align: center;
+    }
+    header nav {
+        display: block;
+        float: none;
+        text-align: center;
+        border-top: 1px solid #111111;
+        border-bottom: 1px solid #111111;
+
+    }
+    header nav ul {
+        display: block;
+        width: 100%;
+    }
+    header nav ul li {
+        display: block;
+        color: #111111;
+        width: 100%;
+    }
+    header nav ul li a{
+        width: 100%;
+    }
+    main .detail-book .img-area {
+        display: flex;
+        height: auto;
+        margin: 0 auto;
+        width: 80%;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    main .detail-book .img-area .img-list{
+        display: flex;
+        width: 100%;
+    }
+    main .detail-book .img-area .img-list{
+        height: 300px;
+    }
+    main .detail-book .img-area .img-list .small-img img{
+        height: 33.3%;
+        display: block;
+        margin: 0 10px;
+    }
+    main .detail-book .img-area .price-and-button {
+        width: 100%;
+        margin: 0 0px;
+        text-align: center;
+    }
+    main .detail-book .img-area .price-and-button p {
+        font-size: 30px;
+        color: red;
+        padding: 0;
+        margin: 10px 0;
+    }
+    main .detail-book h2{
+        padding-top: 20px;
+    }
+    footer nav {
+        float: none;
+        text-align: center;
+    }
+    footer nav ul li {
+        padding: 0 5px;
+    }
+}
