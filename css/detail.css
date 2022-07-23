@@ -36,6 +36,7 @@ header nav ul li a{
 }
 main {
     margin-bottom: 30px;
+    min-height: calc(100vh - 150px); 
 }
 main ul.breadcrumb {
     margin: 20px 0;
